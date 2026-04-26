@@ -18,17 +18,11 @@ func runCommand(name string, args ...string) error {
 func main() {
 	fmt.Println("Mac is going to sleep. Disconnecting Bluetooth devices...")
 
-	// Option 1: Disconnect all devices
-	err := runCommand("blueutil", "--disconnect")
+	// WE Turn off Bluetooth completely
+	err := runCommand("blueutil", "--power", "0")
 	if err != nil {
-		fmt.Println("Failed to disconnect devices:", err)
+		fmt.Println("Failed to turn off Bluetooth:", err)
 	}
-
-	// Option 2 (alternative): WE Turn off Bluetooth completely
-	// err := runCommand("blueutil", "--power", "0")
-	// if err != nil {
-	// 	fmt.Println("Failed to turn off Bluetooth:", err)
-	// }
 
 	fmt.Println("Done.")
 }

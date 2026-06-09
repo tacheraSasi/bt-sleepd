@@ -32,7 +32,7 @@ Pick one:
 **From source (this repo):**
 
 ```sh
-git clone https://github.com/yourusername/bt-sleepd.git
+git clone https://github.com/tacheraSasi/bt-sleepd.git
 cd bt-sleepd
 go build -o bt-sleepd .
 ```
@@ -40,7 +40,7 @@ go build -o bt-sleepd .
 **With `go install`:**
 
 ```sh
-go install github.com/yourusername/bt-sleepd@latest
+go install github.com/tacheraSasi/bt-sleepd@latest
 ```
 
 This puts the binary in `$GOPATH/bin` (default `~/go/bin`).

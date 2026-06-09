@@ -25,6 +25,12 @@ A small Go binary is triggered by [sleepwatcher](https://www.bernhard-baehr.de/)
 brew install blueutil sleepwatcher
 ```
 
+also install go if you don't have it already
+
+```sh
+brew install go
+```
+
 ### 2. Install `bt-sleepd`
 
 Pick one:
